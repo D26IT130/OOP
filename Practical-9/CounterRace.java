@@ -29,12 +29,10 @@ public class CounterRace {
             }
         });
 
-        // Start threads
         t1.start();
         t2.start();
         t3.start();
 
-        // Wait for threads to finish
         t1.join();
         t2.join();
         t3.join();
